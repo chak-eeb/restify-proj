@@ -4,5 +4,5 @@ module.exports = {
 	URL: process.env.BASE_URL || 'http://localhost:3000',
 	MONGODB_URI:
 		process.env.MONGODB_URI ||
-		'mongodb+srv://chak123:chak123@cluster0.3byph.mongodb.net/restify?retryWrites=true&w=majority',
+		'mongodb+srv://chak123:chak123@cluster0.3byph.mongodb.net/cust?retryWrites=true&w=majority',
 };

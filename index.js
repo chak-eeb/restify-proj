@@ -8,7 +8,11 @@ const server = restify.createServer();
 server.use(restify.plugins.bodyParser());
 
 server.listen(config.PORT, () => {
-	mongoose.connect(config.MONGODB_URI, { useNewUrlParser: true });
+	mongoose.connect(config.MONGODB_URI, {
+		useNewUrlParser: true,
+		useUnifiedTopology: true,
+		useFindAndModify: false,
+	});
 });
 
 const db = mongoose.connection;
